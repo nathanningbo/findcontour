@@ -33,6 +33,7 @@ public:
 	void ShowImage(const Mat& image, QLabel *showplace);
 	Mat& GetRoi(int x, int y, int size);
 	void Draw_Line(Mat fordraw,Point pos1, Point pos2);
+	
 
 private slots:
       void on_openFile_pushButton_clicked();
@@ -45,6 +46,7 @@ private:
 	Mat m_imageRoi;
 	Mat m_imageDst;
 	vector<vector<Point2f>> vector_of_contour;
+	int b;
 
 protected:
 	void mousePressEvent(QMouseEvent* event);
